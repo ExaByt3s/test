@@ -101,7 +101,7 @@ def chaikin_money_flow(dataframe, n=20, fillna=False) -> Series:
         cmf = cmf.replace([np.inf, -np.inf], np.nan).fillna(0)
     return Series(cmf, name='cmf')
 
-class tesla4(IStrategy):
+class BB_RPB_TSLmeneguzzo(IStrategy):
     '''
         BB_RPB_TSL
         @author jilv220
